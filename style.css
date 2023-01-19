@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-image: linear-gradient(to top, #7e8dea 0%, #0c35c7 100%);
+}
+
+/* Userpage */
+
+#userpage {
+  text-align: center;
+
+  border: 3px solid greenyellow;
+
+  width: 40%;
+  position: absolute;
+}
+
+.title {
+  font-size: 50px;
+  padding: 40px;
+}
+#name {
+  color: blue;
+}
+#login-btn {
+  font-size: 150%;
+  margin: 15px;
+  border: solid blue;
+  background-color: rgb(62, 114, 255);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+#login-btn:hover {
+  font-weight: bold;
+  border-color: greenyellow;
+}
+
+#username {
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 3px solid greenyellow;
+  width: 500px;
+  position: relative;
+}
+#password {
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 3px solid greenyellow;
+  width: 500px;
+  position: relative;
+}
+#login-error-msg-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#login-error-msg {
+  display: none;
+  color: darkred;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+/* Levels page */
+
+.difficulty {
+  position: absolute;
+  border: 3px solid greenyellow;
+  text-align: center;
+}
+#difficultyLevel {
+  position: relative;
+  padding: 20px;
+}
+
+#buttonsDiv {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.buttons {
+  font-size: 150%;
+  margin: 15px;
+  border: solid blue;
+  background-color: rgb(62, 114, 255);
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+.buttons:hover {
+  font-weight: bold;
+  border-color: greenyellow;
+}
+
+/*---------- sudoku page------------- */
+
+#main-holder {
+  text-align: center;
+  position: absolute;
+}
+#sudoku-title {
+  font-size: 50px;
+  color: azure;
+}
+
+.inp {
+  min-width: 100%;
+  text-align: center;
+  min-height: 100%;
+  border: none;
+  background-color: azure;
+  font-size: 16px;
+}
+.inp:hover {
+  background: rgb(62, 114, 255);
+}
+table {
+  border: 4px solid;
+  border-collapse: collapse;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  background-color: #8df1b5;
+}
+
+td {
+  border: 1px solid black;
+  min-width: 41.5px;
+}
+
+td:nth-of-type(3) {
+  border-right: 3px solid black;
+}
+
+td:nth-of-type(6) {
+  border-right: 3px solid black;
+}
+
+tr:nth-of-type(3) {
+  border-bottom: 3px solid black;
+}
+
+tr:nth-of-type(6) {
+  border-bottom: 3px solid black;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.sudoku-btn {
+  width: 80px;
+  font-size: 18px;
+  margin: 10px;
+  border: solid blue;
+  background-color: rgb(62, 114, 255);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+#final-msg {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#win-msg {
+  color: goldenrod;
+  font-size: 18px;
+  display: none;
+  text-align: center;
+}
+
+#fail-msg {
+  color: darkred;
+  font-size: 18px;
+  display: none;
+  text-align: center;
+}
